@@ -5,11 +5,11 @@ public class GameLogic {
     public int n;
     int [][] directions=new int[][]{{0,1},{1,0},{-1,0},{0,-1},{0,0}};
     public GameLogic(int n){
-        System.out.println("Game LEVEL-"+n);
+        //System.out.println("Game LEVEL-"+n);
         board=new int[n][n];
         this.n=n;
-        display();
-        startGame();
+        //display();
+        //startGame();
     }
 
     private void startGame() {
@@ -20,6 +20,9 @@ public class GameLogic {
             clickTile(position);
             display();
         }
+        if(n==6){
+            System.exit(1);
+        }
         new GameLogic(n+1);
     }
 
@@ -27,6 +30,9 @@ public class GameLogic {
         int row=position/n;
         int col=position%n;
         surroundTile(row,col);
+    }
+    public void clickTile(int x,int y) {
+        surroundTile(x,y);
     }
 
     private void surroundTile(int row, int col) {
@@ -48,7 +54,7 @@ public class GameLogic {
 
     }
 
-    private boolean gameIsNotOver() {
+    public boolean gameIsNotOver() {
         int count=0;
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){

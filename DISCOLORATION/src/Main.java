@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        new GameLogic(2);
+        new GameDriverGUI(2);
+        //new GameLogic(2);
     }
 }

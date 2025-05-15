@@ -35,3 +35,12 @@ src
 ├── GameLogic.java
 └── Main.java
 ```
+
+## ⛓️‍💥 Release
+- You can download your jar file from the release which is in left handside as ***RELEASES***
+- You can download from the **assets**.
+- Run it using,
+```
+java -jar Decoloration.jar
+```
+- Or simply doble click the `Decoloration.jar`

@@ -1,5 +1,5 @@
-# 🧠 DECOLORATION
-- **DECOLORATION** is a mind-bending puzzle game played on an `n × n` grid.
+# 🧠 DISCOLORATION
+- ***DISCOLORATION** is a mind-bending puzzle game played on an `n × n` grid.
 - It's a clever *brainteaser*.
 - This is also called ***Lights out puzzle***.💡
 
